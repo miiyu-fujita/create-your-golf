@@ -3,24 +3,24 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 439,
+      "count": 32002,
       "max": [
-        2.0999999046325684,
-        2.070312976837158,
-        2.0999999046325684
+        0.9969800114631653,
+        0.9969800114631653,
+        0.9996200203895569
       ],
       "min": [
-        -2.100001096725464,
-        -2.129688024520874,
-        -2.0999999046325684
+        -0.9969800114631653,
+        -0.9969800114631653,
+        -0.9996200203895569
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 5268,
+      "byteOffset": 384024,
       "componentType": 5126,
-      "count": 439,
+      "count": 32002,
       "max": [
         1.0,
         1.0,
@@ -34,50 +34,32 @@
       "type": "VEC3"
     },
     {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 439,
-      "max": [
-        1.0,
-        1.0,
-        0.07869081199169159,
-        1.0
-      ],
-      "min": [
-        -1.0,
-        -1.0,
-        -0.07869085669517517,
-        1.0
-      ],
-      "type": "VEC4"
-    },
-    {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 439,
+      "count": 32002,
       "max": [
-        1.0,
-        1.0
+        0.9895300269126892,
+        0.9947900176048279
       ],
       "min": [
-        0.0,
-        0.0
+        0.01018999982625246,
+        0.005160000175237656
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 2280,
+      "count": 190464,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "JmPrsh153 (https://sketchfab.com/JmPrsh153)",
+      "author": "Brandon Farley (https://sketchfab.com/Farley)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/golf-ball-lp-aa9182956c494e7e92c3fde035a0997a",
-      "title": "Golf Ball LP"
+      "source": "https://sketchfab.com/3d-models/golf-ball-f536b891d32847ae8b8660ccbf398611",
+      "title": "Golf Ball"
     },
     "generator": "Sketchfab-12.66.0",
     "version": "2.0"
@@ -85,77 +67,62 @@
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 9120,
+      "byteLength": 761856,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 3512,
-      "byteOffset": 9120,
+      "byteLength": 256016,
+      "byteOffset": 761856,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 10536,
-      "byteOffset": 12632,
+      "byteLength": 768048,
+      "byteOffset": 1017872,
       "byteStride": 12,
-      "name": "floatBufferViews",
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 7024,
-      "byteOffset": 23168,
-      "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 30192,
+      "byteLength": 1785920,
       "uri": "scene.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/lambert2SG_normal.png"
+      "uri": "textures/Scene_-_Root_baseColor.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "lambert2SG",
-      "normalTexture": {
-        "index": 0
-      },
+      "name": "Scene_-_Root",
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.6297637195,
-          0.6297637195,
-          0.6297637195,
-          1.0
-        ],
-        "metallicFactor": 0.3370807927,
-        "roughnessFactor": 0.6419588415
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
       }
     }
   ],
   "meshes": [
     {
-      "name": "Object_0",
+      "name": "Icosphere.012_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TANGENT": 2,
-            "TEXCOORD_0": 3
+            "TEXCOORD_0": 2
           },
-          "indices": 4,
+          "indices": 3,
           "material": 0,
           "mode": 4
         }
@@ -191,11 +158,17 @@
       "children": [
         2
       ],
-      "name": "40f6160b880f47a99820540dd7dab540.obj.cleaner.materialmerger.gles"
+      "name": "Root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Icosphere.012"
     },
     {
       "mesh": 0,
-      "name": "Object_2"
+      "name": "Icosphere.012_0"
     }
   ],
   "samplers": [

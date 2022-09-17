@@ -1,29 +1,25 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef } from "react";
 import './App.scss';
 
 // Components 
 import { Html, Scroll, ScrollControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useLoader } from "@react-three/fiber";
+import { useLoader, useFrame, Canvas} from "@react-three/fiber";
 import Header from "./components/Header";
+import { Model } from "./Scene";
 
-// R3F
-import { Canvas, useFrame } from "@react-three/fiber";
-
-function Model() {
-  const gltf = useLoader(GLTFLoader, '/scene.gltf');
-  return ( 
-  <Suspense>
-    <primitive object={gltf.scene} />
-  </Suspense>)
-}
 
 
 
 function App() {
+  const gltf = useLoader(GLTFLoader, '/scene.gltf')
+
+
   return (
     <>
       
+      
+
       <Canvas 
         concurrent
         colorManagement
@@ -37,8 +33,14 @@ function App() {
       >
       
       <Scroll>
-        
+        {/* Add threejs golf ball model here */}
+        <ambientLight />
+        <Suspense fallback={null}>
+        <Model scale={[50, 50, 50]} position={[60, 0, -20]}/>
+        </Suspense>
       </Scroll>
+      
+      
       <Scroll html fullscreen>
       <Header />
         <h1 className='head-title'> Create Your Golf </h1>
@@ -49,6 +51,7 @@ function App() {
       </ScrollControls>
 
       </Canvas>
+      
     </>
   );
 }
