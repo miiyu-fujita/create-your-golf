@@ -7,10 +7,20 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useLoader, useFrame, Canvas} from "@react-three/fiber";
 import Header from "./components/Header";
 import { Model } from "./Scene";
-import { Card, CardHeader, Grid, Divider, CardContent, Typography, CardMedia } from '@mui/material';
+import { Card, CardHeader, Grid, Divider, CardContent, Typography, CardMedia, Button, createTheme, ThemeProvider} from '@mui/material';
+import { purple } from '@mui/material/colors';
 
 const date = new Date();
 const year = date.getFullYear()
+
+const darkTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#fff'
+    },
+  },
+});
+
 
 const GreenCard = () => {
   return (
@@ -159,7 +169,15 @@ function App() {
           </p>
         </div>
         <div className='cta-section'>
-          <h3 className='cta-text'>Ready to get started?</h3>
+          <h3 className='cta-text'>
+          Ready to get started? <br />
+          <ThemeProvider theme={darkTheme}>
+          <Button style={{color: 'white'}} className='cta-button' variant='contained' disableElevation>
+            <p className='cta-button-text' style={{color: 'black'}}><strong>CREATE</strong></p>
+          </Button>
+          </ThemeProvider>  
+          </h3>
+          
           <p className='cta-message'>
           Note that this is not a real service. 
           This is a personal project I worked on to try and design a landing page, using some tools I thought were cool. 
@@ -177,3 +195,4 @@ function App() {
 }
 
 export default App;
+
