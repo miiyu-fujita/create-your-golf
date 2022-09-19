@@ -90,7 +90,24 @@
     margin: 0 auto;
     position:relative;
     top: 30vh;
-    left: 5vw;
+    left: 1vw;
+    color: #fff;
+    span {
+      display: block;
+    }
+    @media (max-width: 1000) {
+      font-size: 6rem;
+    }
+  }
+
+  .head-subtitle {
+    font-size: 2rem;
+    text-align: left;
+    max-width: 35vw;
+    margin: 3% auto;
+    position:relative;
+    top: 30vh;
+    left: 1vw;
     color: #fff;
     span {
       display: block;
@@ -103,7 +120,7 @@
   .colors-title {
     text-align: center;
     font-size: 3rem;
-    max-width: 60vw;
+    max-width: 70vw;
     margin: 0 auto;
     position:relative;
     top: 5vh;
@@ -133,6 +150,22 @@
       font-size: 6rem;
     }
   }
+
+  .color-options {
+    position: relative;
+    top: 110vh;
+    left: 20vw;
+  }
+
+  .color-grid {
+    position: relative;
+  }
+
+  .custom-options {
+    position: relative;
+  }
+
+
   
   .test-cta-title {
     text-align: center;
@@ -151,6 +184,103 @@
     }
   }
 
+  .testimonial-section {
+    position: relative;
+  }
+
+  .testimonial-text {
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 60vw;
+    margin: 0 auto;
+    top: 250vh;
+    left: 20vw;
+    color: #fff;
+    span {
+      display: block;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
+  }
+
+  .testimonial-giver {
+    position: relative;
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 60vw;
+    margin: 0 auto;
+    top: 255vh;
+    left: 20vw;
+    color: #fff;
+    span {
+      display: block;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
+  }
+
+  .cta-section {
+    position: relative;
+  }
+
+  .cta-text {
+    position: relative;
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 60vw;
+    margin: 0 auto;
+    top: 280vh;
+    left: 20vw;
+    color: #fff;
+    span {
+      display: block;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
+  }
+
+  .cta-message {
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+    max-width: 35vw;
+    margin: 0 auto;
+    top: 345vh;
+    left: 20vw;
+    color: #fff;
+    span {
+      display: block;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
+  }
+
+  .copyright {
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+    max-width: 35vw;
+    margin: 0 auto;
+    top: 350vh;
+    left: 20vw;
+    color: #fff;
+    span {
+      display: block;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+    }
+  }
+
+  .copyright-logo {
+    color: #fff;
+  }
 
   .loading {
     position: absolute;

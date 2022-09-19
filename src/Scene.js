@@ -16,13 +16,13 @@ export function Model(props) {
   const { nodes, materials } = useGLTF('/scene.gltf')
 
   useFrame(() => {
-    group.current.rotation.x += 0.01;
+    group.current.rotation.y += 0.01;
     
   })
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
+      <group rotation={[-Math.PI / 2, 1, 0]}>
         <mesh geometry={nodes.Icosphere012_0.geometry} material={materials['Scene_-_Root']} />
       </group>
     </group>

@@ -8,16 +8,16 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <a href='/colors'>our colors</a>
+              <a href='#colors'>our colors</a>
             </li>
             <li>
-              <a href='/customize'>customize</a>
+              <a href='/'>customize</a>
             </li>
             <li>
-              <a href='/cta'>testimonials</a>
+              <a href='/'>testimonials</a>
             </li>
             <li className='btn'>
-              <a href='/colors'>create</a>
+              <a href='/'>create</a>
             </li>
           </ul>
         </nav>
