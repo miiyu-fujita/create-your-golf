@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import { Model } from "./Scene";
 import { Card, CardHeader, Grid, Divider, CardContent, Typography, CardMedia, Button, createTheme, ThemeProvider} from '@mui/material';
 import { purple, yellow } from '@mui/material/colors';
+import { Custom } from "./Custom"
 
 
 const date = new Date();
@@ -139,9 +140,9 @@ function App() {
         <Suspense fallback={null}>
           <Model scale={[50, 50, 50]} position={[60, 0, -20]}/>
           {/* <OrbitControls /> */}
-          {/* <Model scale={[20, 20, 20]} position={[0, -420, -20]}/>
-          <Model scale={[20, 20, 20]} position={[-100, -420, -20]}/> */}
-          {/* <Model scale={[20, 20, 20]} position={[100, -420, -20]}/> */}
+          <Custom scale={[20, 20, 20]} position={[0, -420, -20]}/>
+          <Custom scale={[20, 20, 20]} position={[-100, -420, -20]}/>
+          <Custom scale={[20, 20, 20]} position={[100, -420, -20]}/>
           {/* Add customized models at specific positions here to fit onto 3rd page */}
         </Suspense>
       </Scroll>
