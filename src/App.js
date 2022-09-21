@@ -8,7 +8,8 @@ import { useLoader, useFrame, Canvas} from "@react-three/fiber";
 import Header from "./components/Header";
 import { Model } from "./Scene";
 import { Card, CardHeader, Grid, Divider, CardContent, Typography, CardMedia, Button, createTheme, ThemeProvider} from '@mui/material';
-import { purple } from '@mui/material/colors';
+import { purple, yellow } from '@mui/material/colors';
+
 
 const date = new Date();
 const year = date.getFullYear()
@@ -138,9 +139,9 @@ function App() {
         <Suspense fallback={null}>
           <Model scale={[50, 50, 50]} position={[60, 0, -20]}/>
           {/* <OrbitControls /> */}
-          <Model scale={[20, 20, 20]} position={[0, -420, -20]}/>
-          <Model scale={[20, 20, 20]} position={[-100, -420, -20]}/>
-          <Model scale={[20, 20, 20]} position={[100, -420, -20]}/>
+          {/* <Model scale={[20, 20, 20]} position={[0, -420, -20]}/>
+          <Model scale={[20, 20, 20]} position={[-100, -420, -20]}/> */}
+          {/* <Model scale={[20, 20, 20]} position={[100, -420, -20]}/> */}
           {/* Add customized models at specific positions here to fit onto 3rd page */}
         </Suspense>
       </Scroll>
@@ -181,7 +182,7 @@ function App() {
           <p className='cta-message'>
           Note that this is not a real service. 
           This is a personal project I worked on to try and design a landing page, using some tools I thought were cool. 
-          I also like and know a lot of people who love golf. 
+          I also like and know people who love golf. 
           </p>
           <p className='copyright'>Copyright {year}</p>
         </div>

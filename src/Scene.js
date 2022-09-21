@@ -7,7 +7,7 @@ title: Golf Ball
 */
 
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, Sparkles } from '@react-three/drei'
 import {useFrame} from '@react-three/fiber'
 
 export function Model(props) {
@@ -23,7 +23,9 @@ export function Model(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 1, 0]}>
-        <mesh geometry={nodes.Icosphere012_0.geometry} material={materials['Scene_-_Root']} />
+        <mesh geometry={nodes.Icosphere012_0.geometry} material={materials['Scene_-_Root']}>
+        <Sparkles count={100} scale={30} size={100} speed={0.4} />
+        </mesh>
       </group>
     </group>
   )
